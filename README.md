@@ -16,8 +16,11 @@ In your web page:
 <script src="dist/supercount.min.js"></script>
 <script>
 jQuery(function($) {
-	$('#yourelement').supercount(from, to, step, time);
-	$('#yourelement').start();
+	var counter = $('#yourelement').supercount(from, to, step, time);
+	counter.on('onCountFinished', function () {
+		//count finished and stuff
+	});
+	counter.start();
 });
 </script> 
 ```
