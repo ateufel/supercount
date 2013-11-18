@@ -16,17 +16,10 @@ In your web page:
 <script src="dist/supercount.min.js"></script>
 <script>
 jQuery(function($) {
-  $('#yourelement').supercount(from, to, step, time);
+	$('#yourelement').supercount(from, to, step, time);
 	$('#yourelement').start();
 });
 </script> 
 ```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
-
 ## Release History
-_(Nothing yet)_
+0.1 initial release, works fine already
