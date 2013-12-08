@@ -1,4 +1,4 @@
-/*! supercount - v0.0.1 - 2013-11-18
+/*! supercount - v0.1.0 - 2013-12-08
 * https://github.com/luschn/supercount
 * Copyright (c) 2013 Andreas Teufel; Licensed MIT */
 /*
@@ -24,11 +24,12 @@
 		
 		var intervalId,
 			val = settings.from,
-			that;
+			that,
+			decimalMultiplier = 1;
 		
 		var loop = function () {
 			val += settings.step;
-			that.html(val);
+			that.html(val / decimalMultiplier);
 			
 			if (val >= settings.to) {
 				clearInterval(intervalId);
@@ -38,6 +39,14 @@
 		
 		this.start = function () {
 			that = $(this);
+			if (settings.step.toString().indexOf('.') >= 0) {
+				decimalMultiplier = Math.pow(10, settings.step.toString().split('.')[1].length);
+			} else {
+				decimalMultiplier = 1;
+			}
+			val *= decimalMultiplier;
+			settings.step *= decimalMultiplier;
+			settings.to *= decimalMultiplier;
 			intervalId = setInterval(loop, settings.stepTime);
 			$(this).trigger('onCountStarted');
 		};
