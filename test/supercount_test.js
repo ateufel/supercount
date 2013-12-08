@@ -61,4 +61,27 @@
 		});
 		this.elem.start();
 	});
+	
+	module('jQuery#supercount.float', {
+		setup: function () {
+			this.elem = $('#counter3').supercount({
+				from: 0.5,
+				to: 5.8,
+				step: 0.1,
+				stepTime: 50
+			});
+		}
+	});
+	
+	asyncTest('test with float', function () {
+		expect(2);
+		this.elem.on('onCountStarted', function () {
+			equal($(this).html(), 0.5, 'start value 0.5');
+		});
+		this.elem.on('onCountFinished', function () {
+			equal($(this).html(), 5.8, 'end value 5.8');
+			start();
+		});
+		this.elem.start();
+	});
 }(jQuery));
