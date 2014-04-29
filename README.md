@@ -16,7 +16,12 @@ In your web page:
 <script src="dist/supercount.min.js"></script>
 <script>
 jQuery(function($) {
-	var counter = $('#yourelement').supercount(from, to, step, time);
+	var counter = $('#yourelement').supercount({
+		from: 0,
+		to: 100,
+		step: 1,
+		stepTime: 100
+	});
 	counter.on('onCountFinished', function () {
 		//count finished and stuff
 	});
@@ -25,4 +30,4 @@ jQuery(function($) {
 </script> 
 ```
 ## Release History
-0.1 initial release, works fine already
+1.0 initial release, ready to count!
