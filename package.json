@@ -1,0 +1,33 @@
+{
+  "name": "supercount",
+  "version": "1.0.0",
+  "description": "Supercount",
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "homepage": "https://github.com/luschn/supercount",
+  "author": {
+    "name": "Andreas Teufel",
+    "email": "admin@devils-heaven.com",
+    "url": "https://github.com/luschn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luschn/supercount.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-qunit": "~0.1.1",
+    "grunt-contrib-concat": "~0.1.2",
+    "grunt-contrib-uglify": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-connect": "~0.3.0",
+    "time-grunt": "~0.1.1"
+  }
+}
