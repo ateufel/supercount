@@ -1,6 +1,6 @@
-/*! supercount - v0.1.0 - 2013-12-08
+/*! supercount - v1.0.0 - 2014-05-05
 * https://github.com/luschn/supercount
-* Copyright (c) 2013 Andreas Teufel; Licensed MIT */
+* Copyright (c) 2014 Andreas Teufel; Licensed MIT */
 /*
  * supercount
  * 
