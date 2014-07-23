@@ -1,7 +1,12 @@
 {
   "name": "supercount",
+<<<<<<< HEAD
   "version": "1.0.1",
   "description": "jQuery Counter Kung Fu",
+=======
+  "version": "1.0.0",
+  "description": "Supercount",
+>>>>>>> 9d6420a0543aef2764ef260dac3f68280fea3aac
   "keywords": [
     "jquery-plugin"
   ],

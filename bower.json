@@ -1,13 +1,18 @@
 {
   "name": "supercount",
+<<<<<<< HEAD
   "version": "1.0.1",
   "homepage": "https://github.com/ateufel/supercount",
   "author": "Andreas Teufel",
   "description": "jQuery Counter Kung Fu",
+=======
+  "version": "1.0.0",
+>>>>>>> 9d6420a0543aef2764ef260dac3f68280fea3aac
   "dependencies": {},
   "devDependencies": {
     "qunit": "~1.12.0",
     "jquery": "~2.0.3"
+<<<<<<< HEAD
   },
   "ignore": [
 	"*",
@@ -20,4 +25,7 @@
 	"count",
 	"counter"
   ]
+=======
+  }
+>>>>>>> 9d6420a0543aef2764ef260dac3f68280fea3aac
 }
