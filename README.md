@@ -4,14 +4,10 @@ jQuery Counter Kung Fu
 
 ## Getting Started
 
-<<<<<<< HEAD
 Download the [production version][min] or the [development version][max].
 
 [min]: https://raw.github.com/luschn/jquery-supercount/master/dist/jquery.supercount.min.js
 [max]: https://raw.github.com/luschn/jquery-supercount/master/dist/jquery.supercount.js
-=======
-Download the [production version](dist/jquery.supercount.js) or the [development version](dist/jquery.supercount.min.js).
->>>>>>> 9d6420a0543aef2764ef260dac3f68280fea3aac
 
 In your web page:
 
