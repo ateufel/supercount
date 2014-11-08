@@ -1,4 +1,4 @@
-/*! supercount - v1.0.3 - 2014-07-23
+/*! supercount - v1.0.4 - 2014-11-08
 * https://github.com/luschn/supercount
 * Copyright (c) 2014 Andreas Teufel; Licensed MIT */
 /*
@@ -47,8 +47,13 @@
 			val *= decimalMultiplier;
 			settings.step *= decimalMultiplier;
 			settings.to *= decimalMultiplier;
-			intervalId = setInterval(loop, settings.stepTime);
+			
 			$(this).trigger('onCountStarted');
+			if (val >= settings.to) {
+				that.trigger('onCountFinished');
+			} else {
+				intervalId = setInterval(loop, settings.stepTime);
+			}
 		};
 		
 		return this.each(function () {

@@ -30,4 +30,7 @@ jQuery(function($) {
 </script> 
 ```
 ## Release History
+
+1.0.4 some small fixes, does not count up when end = start now
+
 1.0 initial release, ready to count!

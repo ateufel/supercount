@@ -45,8 +45,13 @@
 			val *= decimalMultiplier;
 			settings.step *= decimalMultiplier;
 			settings.to *= decimalMultiplier;
-			intervalId = setInterval(loop, settings.stepTime);
+			
 			$(this).trigger('onCountStarted');
+			if (val >= settings.to) {
+				that.trigger('onCountFinished');
+			} else {
+				intervalId = setInterval(loop, settings.stepTime);
+			}
 		};
 		
 		return this.each(function () {
